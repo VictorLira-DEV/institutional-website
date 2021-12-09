@@ -2,10 +2,15 @@
 
 $theme-bg: red;
 
-// .purple{
-//     background-color: $red-500;
-// }
 
-// body{
-//     background-color: $indigo-200;
-// }
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+@media screen and (min-width: 768px){
+    .news-input{
+        width: 50%;
+    }
+}

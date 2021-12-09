@@ -8,7 +8,7 @@ module.exports = {
         filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
     },
-    // mode: 'development',
+    mode: 'development',
     module: {
         rules: [
             {
@@ -22,7 +22,7 @@ module.exports = {
                 },
             },
             {
-                test: /\.(sa|sc|c)ss$/,
+                test: /\.(scss)$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
             {
@@ -53,9 +53,6 @@ module.exports = {
             },
         ],
     },
-    // resolve: {
-    //     extensions: ['.ts', '.js'],
-    // },
     plugins: [
         new HtmlWebPackPlugin({
             filename: 'index.html',
