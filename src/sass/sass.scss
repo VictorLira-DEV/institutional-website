@@ -1,16 +1,20 @@
 @import '~bootstrap/scss/bootstrap.scss';
+.custom-bg-main {
+    background-color: $red-400;
+}
 
-$theme-bg: red;
-
-
-body::before{
+body::before {
     display: block;
     content: '';
     height: 60px;
 }
 
-@media screen and (min-width: 768px){
-    .news-input{
+$theme-colors: (
+    'red': red,
+);
+
+@media screen and (min-width: 768px) {
+    .news-input {
         width: 50%;
     }
 }
