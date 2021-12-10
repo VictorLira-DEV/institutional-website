@@ -7812,6 +7812,9 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+.custom-bg-main {
+  background-color: #e35d6a; }
+
 body::before {
   display: block;
   content: '';
